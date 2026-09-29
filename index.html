@@ -240,6 +240,12 @@ body{background-color:var(--paper);color:var(--ink)}
   .story-hero{padding-left:6%;padding-right:6%}
 }
 
+
+/* Inline vector marks stay crisp and monochrome across mobile operating systems. */
+.sparkle-icon{display:inline-block;width:1em;height:1em;vertical-align:-.13em;fill:currentColor;flex:0 0 auto}
+.brand-mark{display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.brand-mark .sparkle-icon{width:1em;height:1em}
+
 </style>
   
 </head>
@@ -247,11 +253,11 @@ body{background-color:var(--paper);color:var(--ink)}
   <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
   <div class="grain" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="На главную"><span class="brand-mark">✳</span> Школа может больше</a>
+    <a class="brand" href="#home" aria-label="На главную"><span class="brand-mark"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span> Школа может больше</a>
     <nav aria-label="Основная навигация">
       <a href="#about">Обо мне</a><a href="#ideas">Мои идеи</a><a href="why-vote.html">Почему я</a>
     </nav>
-    <a class="nav-vote" href="#vote">Голосовать <span>↗</span></a>
+    <a class="nav-vote" href="#vote">Голосовать <span>↗︎</span></a>
   </header>
 
   <main>
@@ -260,16 +266,16 @@ body{background-color:var(--paper);color:var(--ink)}
         <div class="eyebrow"><span class="live-dot"></span> Кандидат в директора школы самоуправления</div>
         <h1>Школа — это<br>больше, чем <em>уроки.</em></h1>
         <p class="hero-lead">Давайте сделаем школьные дни ярче, перемены — длиннее, а наши идеи — реальностью.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#ideas">Узнать мои идеи <span>↓</span></a><a class="text-link" href="#about">Познакомиться со мной <span>↘</span></a></div>
+        <div class="hero-actions"><a class="button button-dark" href="#ideas">Узнать мои идеи <span>↓︎</span></a><a class="text-link" href="#about">Познакомиться со мной <span>↘︎</span></a></div>
         <div class="hero-note"><span class="note-line"></span> Голосуй за перемены, которые чувствуются каждый день</div>
       </div>
       <div class="hero-art" aria-label="Иллюстрация о школьных переменах">
         <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
         <div class="sun-shape"></div>
-        <button type="button" class="poster-card tilt-card" aria-label="Покрутить открытку про идеи для школы. Двойное нажатие сбрасывает поворот."><span class="poster-kicker">БОЛЬШЕ</span><strong>ИДЕЙ<br>ДЛЯ<br>ШКОЛЫ</strong><span class="poster-spark">✳</span><span class="poster-foot">твой голос имеет значение</span></button>
-        <div class="float-tag tag-music">♫ <span>музыка<br>вместо звонка</span></div>
-        <div class="float-tag tag-break"><span class="tag-icon">↗</span><span>перемена<br>для себя</span></div>
-        <span class="art-star star-a">✳</span><span class="art-star star-b">✦</span>
+        <button type="button" class="poster-card tilt-card" aria-label="Покрутить открытку про идеи для школы. Двойное нажатие сбрасывает поворот."><span class="poster-kicker">БОЛЬШЕ</span><strong>ИДЕЙ<br>ДЛЯ<br>ШКОЛЫ</strong><span class="poster-spark"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span><span class="poster-foot">твой голос имеет значение</span></button>
+        <div class="float-tag tag-music">♫︎ <span>музыка<br>вместо звонка</span></div>
+        <div class="float-tag tag-break"><span class="tag-icon">↗︎</span><span>перемена<br>для себя</span></div>
+        <span class="art-star star-a"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span><span class="art-star star-b">✦︎</span>
         <div class="art-caption">9 «Е» · кандидат</div>
       </div>
       <a class="scroll-cue" href="#about"><span></span> Листай дальше</a>
@@ -277,28 +283,28 @@ body{background-color:var(--paper);color:var(--ink)}
 
     <section class="intro section reveal" id="about">
       <div class="section-label"><span>01</span> ЗНАКОМСТВО</div>
-      <div class="intro-content"><p class="overline">Привет, я кандидат из 9 «Е»</p><h2>Мне нравится<br><em>создавать</em> новое.</h2><p class="body-copy">Я учусь в 9 «Е» и занимаюсь созданием сайтов. Мне нравится превращать задумки в понятные и полезные вещи — продумывать, как человек будет ими пользоваться, и доводить работу до результата. В школьной жизни хочу действовать так же: сначала услышать ваши предложения, потом вместе выбрать самые нужные и объяснить, что можно сделать дальше.</p><a class="inline-link" href="#vote">Давай менять школу вместе <span>↗</span></a><p class="body-copy intro-extra">Мне важно, чтобы сайт и школьные идеи были понятны каждому, а не оставались только красивыми словами. Поэтому я хочу регулярно рассказывать, что мы обсуждаем и какие шаги уже сделали.</p><a class="inline-link story-link" href="why-vote.html">Читать, почему стоит выбрать меня <span>↗</span></a></div>
-      <div class="profile-card tilt-card" tabindex="0" aria-label="Карточка кандидата. Наведите курсор, чтобы наклонить."><div class="profile-top"><div class="avatar">9Е</div><span class="profile-status"><i></i> открыт к идеям</span></div><div class="profile-name">Твой кандидат</div><div class="profile-role">9 «Е» · создатель сайтов · за реальные перемены</div><div class="profile-divider"></div><div class="profile-facts"><div><span>МОЙ ИНТЕРЕС</span><strong>Технологии и идеи</strong></div><div><span>МОЙ ПОДХОД</span><strong>Слушать и делать</strong></div></div><div class="scribble">Договорились? <span>↘</span></div></div>
+      <div class="intro-content"><p class="overline">Привет, я кандидат из 9 «Е»</p><h2>Мне нравится<br><em>создавать</em> новое.</h2><p class="body-copy">Я учусь в 9 «Е» и занимаюсь созданием сайтов. Мне нравится превращать задумки в понятные и полезные вещи — продумывать, как человек будет ими пользоваться, и доводить работу до результата. В школьной жизни хочу действовать так же: сначала услышать ваши предложения, потом вместе выбрать самые нужные и объяснить, что можно сделать дальше.</p><a class="inline-link" href="#vote">Давай менять школу вместе <span>↗︎</span></a><p class="body-copy intro-extra">Мне важно, чтобы сайт и школьные идеи были понятны каждому, а не оставались только красивыми словами. Поэтому я хочу регулярно рассказывать, что мы обсуждаем и какие шаги уже сделали.</p><a class="inline-link story-link" href="why-vote.html">Читать, почему стоит выбрать меня <span>↗︎</span></a></div>
+      <div class="profile-card tilt-card" tabindex="0" aria-label="Карточка кандидата. Наведите курсор, чтобы наклонить."><div class="profile-top"><div class="avatar">9Е</div><span class="profile-status"><i></i> открыт к идеям</span></div><div class="profile-name">Твой кандидат</div><div class="profile-role">9 «Е» · создатель сайтов · за реальные перемены</div><div class="profile-divider"></div><div class="profile-facts"><div><span>МОЙ ИНТЕРЕС</span><strong>Технологии и идеи</strong></div><div><span>МОЙ ПОДХОД</span><strong>Слушать и делать</strong></div></div><div class="scribble">Договорились? <span>↘︎</span></div></div>
     </section>
 
     <section class="ideas section" id="ideas">
       <div class="ideas-head reveal"><div><div class="section-label"><span>02</span> ЧТО Я ПРЕДЛАГАЮ</div><h2>Небольшие идеи.<br><em>Большая разница.</em></h2></div><p>Четыре понятные идеи, которые можно обсудить и попробовать вместе.</p></div>
       <div class="idea-grid">
-        <article class="idea-card idea-lilac reveal tilt-card"><div class="idea-top"><span class="idea-number">01 / РИТМ</span><span class="idea-icon">◷</span></div><h3>Перемены,<br>которых хватает</h3><p>Предложить сократить уроки и продлить перемены — чтобы успевать отдохнуть, пообщаться и спокойно подготовиться к следующему уроку. Обсудим расписание с учителями и найдём реальный вариант.</p><span class="idea-arrow">↗</span></article>
-        <article class="idea-card idea-yellow reveal tilt-card"><div class="idea-top"><span class="idea-number">02 / НАСТРОЕНИЕ</span><span class="idea-icon">♫</span></div><h3>Музыка вместо<br>обычного звонка</h3><p>Пусть начало и конец урока отмечает музыка. Можно выбирать мелодии вместе и менять их каждую неделю — с учётом расписания и правил школы.</p><span class="idea-arrow">↗</span></article>
-        <article class="idea-card idea-green reveal tilt-card"><div class="idea-top"><span class="idea-number">03 / ГОЛОС</span><span class="idea-icon">✳</span></div><h3>Школьные идеи<br>на виду</h3><p>Открытый ящик предложений и короткие опросы: каждый сможет предложить идею, а все увидят, что удалось сделать и что ещё обсуждаем.</p><span class="idea-arrow">↗</span></article>
-        <article class="idea-card idea-peach reveal tilt-card"><div class="idea-top"><span class="idea-number">04 / ВМЕСТЕ</span><span class="idea-icon">↗</span></div><h3>Больше событий,<br>созданных нами</h3><p>Тематические дни, турниры и творческие встречи — с инициативой от учеников. Начнём с простого голосования за то, что интересно большинству.</p><span class="idea-arrow">↗</span></article>
+        <article class="idea-card idea-lilac reveal tilt-card"><div class="idea-top"><span class="idea-number">01 / РИТМ</span><span class="idea-icon">◷︎</span></div><h3>Перемены,<br>которых хватает</h3><p>Предложить сократить уроки и продлить перемены — чтобы успевать отдохнуть, пообщаться и спокойно подготовиться к следующему уроку. Обсудим расписание с учителями и найдём реальный вариант.</p><span class="idea-arrow">↗︎</span></article>
+        <article class="idea-card idea-yellow reveal tilt-card"><div class="idea-top"><span class="idea-number">02 / НАСТРОЕНИЕ</span><span class="idea-icon">♫︎</span></div><h3>Музыка вместо<br>обычного звонка</h3><p>Пусть начало и конец урока отмечает музыка. Можно выбирать мелодии вместе и менять их каждую неделю — с учётом расписания и правил школы.</p><span class="idea-arrow">↗︎</span></article>
+        <article class="idea-card idea-green reveal tilt-card"><div class="idea-top"><span class="idea-number">03 / ГОЛОС</span><span class="idea-icon"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span></div><h3>Школьные идеи<br>на виду</h3><p>Открытый ящик предложений и короткие опросы: каждый сможет предложить идею, а все увидят, что удалось сделать и что ещё обсуждаем.</p><span class="idea-arrow">↗︎</span></article>
+        <article class="idea-card idea-peach reveal tilt-card"><div class="idea-top"><span class="idea-number">04 / ВМЕСТЕ</span><span class="idea-icon">↗︎</span></div><h3>Больше событий,<br>созданных нами</h3><p>Тематические дни, турниры и творческие встречи — с инициативой от учеников. Начнём с простого голосования за то, что интересно большинству.</p><span class="idea-arrow">↗︎</span></article>
 
       </div>
-      <div class="ideas-foot reveal"><span>✳</span> Есть своя идея? Я готов выслушать.</div><div class="more-card reveal"><div class="more-card-copy"><span class="overline">ХОЧЕШЬ УЗНАТЬ БОЛЬШЕ?</span><h3>Как я собираюсь превратить предложения в реальные шаги</h3><p>На второй странице — мои принципы, первые действия и честный ответ на вопрос, почему я прошу поддержать мою кандидатуру.</p><a class="button button-dark" href="why-vote.html">Почему голосовать за меня <span>↗</span></a></div><span class="more-spark" aria-hidden="true">✳</span></div>
+      <div class="ideas-foot reveal"><span><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span> Есть своя идея? Я готов выслушать.</div><div class="more-card reveal"><div class="more-card-copy"><span class="overline">ХОЧЕШЬ УЗНАТЬ БОЛЬШЕ?</span><h3>Как я собираюсь превратить предложения в реальные шаги</h3><p>На второй странице — мои принципы, первые действия и честный ответ на вопрос, почему я прошу поддержать мою кандидатуру.</p><a class="button button-dark" href="why-vote.html">Почему голосовать за меня <span>↗︎</span></a></div><span class="more-spark" aria-hidden="true"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span></div>
     </section>
 
-    <section class="why section" id="why"><div class="why-stamp reveal">ТВОЙ<br>ГОЛОС<br><span>✳</span></div><div class="why-content reveal"><div class="section-label"><span>03</span> ПОЧЕМУ Я</div><h2>Потому что<br>важны <em>дела.</em></h2><p class="why-lead">Я не обещаю, что всё изменится за один день. Я обещаю выслушивать, обсуждать и доводить хорошие идеи до конкретных шагов.</p><div class="why-points"><div><span>01</span><p><strong>Я знаю, как воплощать идеи.</strong><br>Создаю сайты — значит умею продумать путь от задумки до результата.</p></div><div><span>02</span><p><strong>Я хочу представлять всех.</strong><br>Буду собирать мнения не только самых громких, но и тех, кого обычно не слышно.</p></div><div><span>03</span><p><strong>Я за понятный результат.</strong><br>Буду делиться, что получилось, что в процессе и что пока нельзя изменить.</p></div></div></div></section>
+    <section class="why section" id="why"><div class="why-stamp reveal">ТВОЙ<br>ГОЛОС<br><span><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span></div><div class="why-content reveal"><div class="section-label"><span>03</span> ПОЧЕМУ Я</div><h2>Потому что<br>важны <em>дела.</em></h2><p class="why-lead">Я не обещаю, что всё изменится за один день. Я обещаю выслушивать, обсуждать и доводить хорошие идеи до конкретных шагов.</p><div class="why-points"><div><span>01</span><p><strong>Я знаю, как воплощать идеи.</strong><br>Создаю сайты — значит умею продумать путь от задумки до результата.</p></div><div><span>02</span><p><strong>Я хочу представлять всех.</strong><br>Буду собирать мнения не только самых громких, но и тех, кого обычно не слышно.</p></div><div><span>03</span><p><strong>Я за понятный результат.</strong><br>Буду делиться, что получилось, что в процессе и что пока нельзя изменить.</p></div></div></div></section>
 
-    <section class="vote-section" id="vote"><div class="vote-deco deco-left">✳</div><div class="vote-deco deco-right">✦</div><div class="vote-inner reveal"><div class="section-label section-label-light"><span>04</span> ТВОЙ ВЫБОР</div><h2>Давай сделаем<br>школу <em>нашей.</em></h2><p>Если тебе близки эти идеи — поддержи меня своим голосом.</p><button class="button button-light" id="voteButton" type="button"><span class="vote-button-text">Голосовать за кандидата</span><span class="button-icon">↗</span></button><div class="vote-count"><span class="count-number" id="voteCount">—</span> голосов за перемены</div><div class="vote-message" id="voteMessage" role="status" aria-live="polite"></div><div class="vote-footnote">Голос можно отменить в любое время с этого устройства.</div></div></section>
+    <section class="vote-section" id="vote"><div class="vote-deco deco-left"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></div><div class="vote-deco deco-right">✦︎</div><div class="vote-inner reveal"><div class="section-label section-label-light"><span>04</span> ТВОЙ ВЫБОР</div><h2>Давай сделаем<br>школу <em>нашей.</em></h2><p>Если тебе близки эти идеи — поддержи меня своим голосом.</p><button class="button button-light" id="voteButton" type="button"><span class="vote-button-text">Голосовать за кандидата</span><span class="button-icon">↗︎</span></button><div class="vote-count"><span class="count-number" id="voteCount">—</span> голосов за перемены</div><div class="vote-message" id="voteMessage" role="status" aria-live="polite"></div><div class="vote-footnote">Голос можно отменить в любое время с этого устройства.</div></div></section>
   </main>
-  <a class="back-to-top" href="#home" aria-label="Вернуться наверх">↑</a>
-  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">✳</span> Школа может больше</a><span>Сделано с идеей и заботой · 9 «Е»</span><a href="#home">Наверх ↑</a></footer>
+  <a class="back-to-top" href="#home" aria-label="Вернуться наверх">↑︎</a>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg class="sparkle-icon" aria-hidden="true" focusable="false" viewBox="0 0 100 100"><path d="M50 4 59 38 87 13 66 42 97 50 66 58 87 87 59 62 50 96 41 62 13 87 34 58 3 50 34 42 13 13 41 38z"/></svg></span> Школа может больше</a><span>Сделано с идеей и заботой · 9 «Е»</span><a href="#home">Наверх ↑︎</a></footer>
 <script>
 const textRevealItems = document.querySelectorAll('main h1, main h2, main h3, .hero-lead, .hero-note, .body-copy, .why-lead, .why-points p, .idea-card p, .ideas-head > p, .vote-inner > p');
 textRevealItems.forEach((item) => item.classList.add('reveal-text'));
@@ -370,14 +376,14 @@ voteButton.addEventListener('click', async () => {
     voted = data.voted;
     localStorage.setItem('school-candidate-voted', voted ? 'yes' : 'no');
     voteCount.textContent = data.count;
-    voteMessage.textContent = voted ? 'Спасибо за поддержку! ✳' : 'Голос отменён. Вы всегда можете проголосовать снова.';
+    voteMessage.textContent = voted ? 'Спасибо за поддержку!' : 'Голос отменён. Вы всегда можете проголосовать снова.';
     renderVoteState();
   } catch {
     // A downloaded HTML file has no Python server: keep a clear per-device demo vote.
     voted = nextVote;
     localStorage.setItem('school-candidate-voted', voted ? 'yes' : 'no');
     voteCount.textContent = voted ? '1' : '0';
-    voteMessage.textContent = voted ? 'Голос сохранён на этом устройстве. ✳' : 'Голос отменён на этом устройстве.';
+    voteMessage.textContent = voted ? 'Голос сохранён на этом устройстве.' : 'Голос отменён на этом устройстве.';
     renderVoteState();
   } finally {
     busy = false;
